@@ -1,0 +1,50 @@
+
+
+<div class="pageContainer">
+
+  {{add-edit-plans-tab-component callSave=(action 'saveData') tabName='RECIPES'}}
+
+  <div class="tabsContentContainer">
+
+    <div id="bas" class="tabContainer tabDisplayed">
+
+      <p> Set plan basic info </p>
+
+      <div id="languageFilterSpecial" style="padding-bottom: 5px;">
+        {{language-filter-component filterValues=model.languages.data callLanguageData=(action 'getDataByLanguage')}}
+      </div>
+
+      {{paper-input id="name" class="flex-50 paperInputs" label="Name" placeholder="Enter name" value=name onChange=(action (mut name))}}
+      {{paper-input id="rawname" class="flex-50 paperInputs" label="Rawname" placeholder="Enter rawname" value=rawname onChange=(action (mut rawname))}}
+      {{paper-input id="description" textarea=true block=true label="Description" maxlength=500 passThru=(hash rows=5 maxRows=5)
+       value=biography onChange=(action (mut biography))}}
+
+    </div>
+
+    <!-- Tags container -->
+    <div id="tag" class="tabContainer">
+
+      <p> Set plan tags </p>
+
+      {{tags-list-component item=model.tags.data selectedTags=selectedTags}}
+    </div>
+
+    <div id="imag" class="tabContainer">
+      <p> Set plan image </p>
+
+      {{upload-image-component title='Plan image' oldImage='/assets/pictures/image-placeholder.png'}}
+    </div>
+
+
+    <div id="data" class="tabContainer">
+      <p> Set plan recipes </p>
+      {{search-input-component callSearch=(action 'search')}}
+      <br/>
+      {{recipes-list-component list=model.recipes.data selected=selectedRecipes action='add'}}
+    </div>
+
+  </div>
+
+</div>
+
+{{outlet}}

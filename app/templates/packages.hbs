@@ -1,0 +1,27 @@
+
+<div class="pageContainer">
+
+  {{search-input-component callSearch=(action 'search')}}
+
+  <br/>
+  <br/>
+
+  <div id="packagesPage">
+
+    {{#each model.data as |package|}}
+      {{package-item-component item=package currentId=currentPackageId message=dialogMessage function=functionName}}
+    {{/each}}
+
+  </div>
+
+</div>
+
+{{paper-fab-component icon='plus' page='add-package'}}
+
+<!-- Set confirmation dialog -->
+<div id="confirmationDialog" class="dialogWrapper confirmationDialog">
+  <!-- Set component properties and closure action for triggering appropriate controller action -->
+  {{confirmation-dialog-component item=dialogMessage call=(action functionName)}}
+</div>
+
+{{outlet}}

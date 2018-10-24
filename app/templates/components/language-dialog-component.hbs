@@ -1,0 +1,29 @@
+
+<div id="languageDialogContainer">
+  <p>Add language</p>
+  <div>
+
+    <table>
+      <tr>
+        <td><span>Name: </span></td>
+        <td><input id="languageText" type="text" /></td>
+      </tr>
+
+      <tr>
+        <td><span>ISO: </span></td>
+        <td><input id="isoText" type="text" /></td>
+      </tr>
+    </table>
+
+    <br/>
+
+    <!-- Dialog buttons -->
+    <div class="dialogButtonContainer">
+      <p class="cancelButton" {{action 'closeDialog'}}>Cancel</p>
+      <p class="addButton" {{action 'do'}}>Save</p>
+    </div>
+
+  </div>
+</div>
+
+{{yield}}

@@ -1,0 +1,37 @@
+
+<div id="menuContainer">
+
+  <div id="menuLogoContainer">
+    <img src="assets/pictures/spartan-logo.svg"/>
+    <p> SpartanApps </p>
+  </div>
+
+  <div id="menuItemsContainer">
+    {{#each menuItems as |item|}}
+
+      {{#if item.link}}
+
+        {{#link-to item.title}}
+          <div id="{{item.title}}" class="menuItem" {{action 'setCurrentPage' item.title}}>
+            <img src="{{item.icon}}" class="menuItemIcon"/>
+            <p> {{menu-item-title-decorator item.title}} </p>
+          </div>
+        {{/link-to}}
+
+        {{else}}
+
+          <div id="{{item.title}}" class="menuItem" {{action "toggleMenuSide"}}>
+            <img src="{{item.icon}}" class="menuItemIcon"/>
+            <p>{{item.title}}</p>
+          </div>
+
+      {{/if}}
+
+
+
+    {{/each}}
+  </div>
+
+</div>
+
+{{yield}}

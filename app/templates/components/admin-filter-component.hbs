@@ -1,0 +1,11 @@
+
+<div id="adminFilter">
+  <p id="adminFilterDefaultValue" {{action 'toggleDropdown' bubbles=false}}>Admin</p>
+  <div id="adminFilterDropdown" class="filterDropdown">
+    {{#each filterValues as |item index|}}
+      <p class="adminFilterItem" {{action 'changeFilter' index bubbles=false}}>{{item}}</p>
+    {{/each}}
+  </div>
+</div>
+
+{{yield}}

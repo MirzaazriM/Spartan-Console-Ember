@@ -1,0 +1,20 @@
+md-divider {
+
+          border-top-color: paper-color($foreground, "4");
+          border-top-color: var(--foreground-4);
+        
+}
+
+.layout-row,
+.layout-xs-row, .layout-gt-xs-row,
+.layout-sm-row, .layout-gt-sm-row,
+.layout-md-row, .layout-gt-md-row,
+.layout-lg-row, .layout-gt-lg-row,
+.layout-xl-row {
+  & > md-divider {
+
+          border-right-color: paper-color($foreground, "4");
+          border-right-color: var(--foreground-4);
+        
+  }
+}

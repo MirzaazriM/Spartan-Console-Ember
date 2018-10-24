@@ -1,0 +1,42 @@
+md-menu-content {
+
+          background-color: paper-color($background, "A100");
+          background-color: RGB(var(--background-A100));
+        
+
+  md-menu-item {
+
+          color: paper-color($foreground, "1");
+          color: var(--foreground-1);
+        
+
+    md-icon {
+
+          color: paper-color($foreground, "2");
+          color: var(--foreground-2);
+        
+    }
+
+    .md-button[disabled] {
+
+          color: paper-color($foreground, "3");
+          color: var(--foreground-3);
+        
+
+      md-icon {
+
+          color: paper-color($foreground, "3");
+          color: var(--foreground-3);
+        
+      }
+    }
+
+  }
+
+  md-menu-divider {
+
+          background-color: paper-color($foreground, "4");
+          background-color: var(--foreground-4);
+        
+  }
+}

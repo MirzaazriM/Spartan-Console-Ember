@@ -1,0 +1,8 @@
+
+<div class="languageItem">
+  <p>{{item.name}}</p>
+  <p class="isoElement">{{item.iso}}</p>
+  <img src="/assets/icons/delete.svg" {{action 'openDialog' item.id}}/>
+</div>
+
+{{yield}}

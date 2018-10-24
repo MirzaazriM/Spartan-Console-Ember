@@ -1,0 +1,1 @@
+/Users/tech387/Desktop/Projects/spartan-console-ember/app/components/upload-muscle-image-component.js

@@ -1,0 +1,1 @@
+Ember.libraries.register('Ember Paper', '1.0.0-beta.18');

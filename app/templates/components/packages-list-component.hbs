@@ -1,0 +1,14 @@
+
+{{#each list as |package|}}
+  <div id="{{package.id}}" class="packageListItem" {{action 'select' package.id}}>
+    <img src="{{package.thumbnail}}"/>
+    <p>{{package.name}}</p>
+    <div class="skuWrapper" {{action "disableSelectingPackage" bubbles=false}}>
+      {{paper-input id=package.id class="flex-80 paperInputs sku" label="Sku" placeholder="Enter sku" value=package.sku onChange=(action (mut package.sku))}}
+    </div>
+  </div>
+
+
+{{/each}}
+
+{{yield}}

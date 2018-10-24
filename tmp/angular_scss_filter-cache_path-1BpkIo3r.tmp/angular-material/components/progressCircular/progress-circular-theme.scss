@@ -1,0 +1,28 @@
+md-progress-circular {
+
+  path {
+
+          stroke: paper-color($primary, "500");
+          stroke: RGB(var(--primary-500));
+        
+  }
+
+  &.md-warn {
+    path {
+
+          stroke: paper-color($warn, "500");
+          stroke: RGB(var(--warn-500));
+        
+    }
+  }
+
+  &.md-accent {
+    path {
+
+          stroke: paper-color($accent, "500");
+          stroke: RGB(var(--accent-500));
+        
+    }
+  }
+
+}

@@ -1,0 +1,20 @@
+
+{{#if page}}
+
+  {{#link-to page}}
+    <div id="paperFab">
+      <!-- Set given icon value -->
+      <img src="assets/icons/{{icon}}.svg" />
+    </div>
+  {{/link-to}}
+
+  {{else}}
+
+    <div id="paperFab">
+      <!-- Set given icon value -->
+      <img src="assets/icons/{{icon}}.svg" />
+    </div>
+
+{{/if}}
+
+{{yield}}

@@ -1,0 +1,9 @@
+
+{{#each list as |recipe|}}
+  <div id="{{recipe.id}}" class="recipeListItem" {{action 'select' recipe.id}}>
+    <img src="{{recipe.thumbnail}}"/>
+    <p>{{recipe.title}}</p>
+  </div>
+{{/each}}
+
+{{yield}}

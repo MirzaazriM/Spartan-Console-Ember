@@ -1,0 +1,1 @@
+{"modulePrefix":"spartan-console","environment":"development","rootURL":"/","locationType":"hash","EmberENV":{"FEATURES":{},"EXTEND_PROTOTYPES":{"Date":false}},"APP":{"name":"spartan-console","version":"0.0.0+aa5e3498"},"ember-paper":{"insertFontLinks":true},"exportApplicationGlobal":true}

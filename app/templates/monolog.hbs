@@ -1,0 +1,28 @@
+
+
+<div class="pageContainer">
+
+  <div id="monologPage">
+
+    <div id="monologHeader">
+      <p>Monolog</p>
+      {{monolog-filter-component defaultFilter=currentFilter}}
+    </div>
+
+    <div>
+      {{#each model.data as |log|}}
+        {{monolog-item-component item=log currentDate=currentLogDate}}
+      {{/each}}
+    </div>
+
+  </div>
+
+</div>
+
+<!-- Set confirmation dialog -->
+<div id="confirmationDialog" class="dialogWrapper confirmationDialog">
+  <!-- Set component properties and closure action for triggering appropriate controller action -->
+  {{confirmation-dialog-component item='This will delete selected log.' call=(action 'deleteLog')}}
+</div>
+
+{{outlet}}

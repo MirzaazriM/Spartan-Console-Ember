@@ -1,0 +1,1 @@
+/Users/tech387/Desktop/Projects/spartan-console-ember/tmp/creator-output_path-fnVzpdZo.tmp/version.js

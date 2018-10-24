@@ -1,0 +1,6 @@
+define("ember-paper/templates/components/paper-virtual-repeat", ["exports"], function (exports) {
+  "use strict";
+
+  exports.__esModule = true;
+  exports.default = Ember.HTMLBars.template({ "id": "zy+irK5d", "block": "{\"symbols\":[\"&default\"],\"statements\":[[4,\"paper-virtual-repeat-scroller\",null,[[\"onScroll\"],[[27,\"action\",[[22,0,[]],\"onScroll\"],null]]],{\"statements\":[[0,\"  \"],[7,\"div\"],[11,\"class\",\"md-virtual-repeat-sizer\"],[12,\"style\",[21,\"contentStyle\"]],[9],[10],[0,\"\\n\"],[4,\"if\",[[23,[\"ignoreOffsetter\"]]],null,{\"statements\":[[0,\"  \\t\"],[7,\"div\"],[11,\"class\",\"md-virtual-repeat-offsetter\"],[9],[10],[0,\"\\n\\n\"]],\"parameters\":[]},{\"statements\":[[0,\"  \\t\"],[7,\"div\"],[11,\"class\",\"md-virtual-repeat-offsetter\"],[12,\"style\",[21,\"offsetterStyle\"]],[9],[0,\"\\n    \\t\"],[14,1,[[23,[\"rawVisibleItems\"]],[23,[\"visibleItems\"]]]],[0,\"\\n  \\t\"],[10],[0,\"\\n\"]],\"parameters\":[]}]],\"parameters\":[]},null],[4,\"if\",[[23,[\"ignoreOffsetter\"]]],null,{\"statements\":[[0,\"\\t\"],[14,1,[[23,[\"rawVisibleItems\"]],[23,[\"visibleItems\"]]]],[0,\"\\n\"]],\"parameters\":[]},null]],\"hasEval\":false}", "meta": { "moduleName": "ember-paper/templates/components/paper-virtual-repeat.hbs" } });
+});

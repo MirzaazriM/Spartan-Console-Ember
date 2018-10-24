@@ -1,0 +1,14 @@
+
+<div id="header">
+    <img id="menuIcon" src="assets/icons/menu.svg" {{action 'toggleMenu'}}/>
+    <p id="pageTitle">{{menu-item-title-decorator clickedItem}}</p>
+    <div id="dropdownsContainer">
+      <img class="dropdownIcons" src="/assets/icons/user.svg" {{action 'toggleUserDropdown'  bubbles=false}} />
+      <img class="dropdownIcons" src="/assets/icons/notifications.svg" {{action 'toggleNotificationsDropdown'  bubbles=false}} />
+
+      {{user-dropdown-component}}
+      {{notifications-dropdown-component}}
+    </div>
+</div>
+
+{{yield}}

@@ -1,0 +1,116 @@
+md-switch {
+  .md-ink-ripple {
+
+          color: paper-color($background, "500");
+          color: RGB(var(--background-500));
+        
+  }
+  .md-thumb {
+
+          background-color: paper-color($background, "50");
+          background-color: RGB(var(--background-50));
+        
+  }
+  .md-bar {
+
+          background-color: paper-color($background, "500");
+          background-color: RGB(var(--background-500));
+        
+  }
+
+  &.md-checked {
+    .md-ink-ripple {
+
+          color: paper-color($accent, "500");
+          color: RGB(var(--accent-500));
+        
+    }
+    .md-thumb {
+
+          background-color: paper-color($accent, "500");
+          background-color: RGB(var(--accent-500));
+        
+    }
+    .md-bar {
+
+          background-color: rgba(paper-color($accent, "500"), 0.5);
+          background-color: RGBA(var(--accent-500), 0.5);
+        
+    }
+    &.md-focused .md-thumb:before {
+
+          background-color: rgba(paper-color($accent, "500"), 0.26);
+          background-color: RGBA(var(--accent-500), 0.26);
+        
+    }
+
+    &.md-primary {
+      .md-ink-ripple {
+
+          color: paper-color($primary, "500");
+          color: RGB(var(--primary-500));
+        
+      }
+      .md-thumb {
+
+          background-color: paper-color($primary, "500");
+          background-color: RGB(var(--primary-500));
+        
+      }
+      .md-bar {
+
+          background-color: rgba(paper-color($primary, "500"), 0.5);
+          background-color: RGBA(var(--primary-500), 0.5);
+        
+      }
+      &.md-focused .md-thumb:before {
+
+          background-color: rgba(paper-color($primary, "500"), 0.26);
+          background-color: RGBA(var(--primary-500), 0.26);
+        
+      }
+    }
+
+    &.md-warn {
+      .md-ink-ripple {
+
+          color: paper-color($warn, "500");
+          color: RGB(var(--warn-500));
+        
+      }
+      .md-thumb {
+
+          background-color: paper-color($warn, "500");
+          background-color: RGB(var(--warn-500));
+        
+      }
+      .md-bar {
+
+          background-color: rgba(paper-color($warn, "500"), 0.5);
+          background-color: RGBA(var(--warn-500), 0.5);
+        
+      }
+      &.md-focused .md-thumb:before {
+
+          background-color: rgba(paper-color($warn, "500"), 0.26);
+          background-color: RGBA(var(--warn-500), 0.26);
+        
+      }
+    }
+  }
+
+  &[disabled] {
+    .md-thumb {
+
+          background-color: paper-color($background, "400");
+          background-color: RGB(var(--background-400));
+        
+    }
+    .md-bar {
+
+          background-color: paper-color($foreground, "4");
+          background-color: var(--foreground-4);
+        
+    }
+  }
+}

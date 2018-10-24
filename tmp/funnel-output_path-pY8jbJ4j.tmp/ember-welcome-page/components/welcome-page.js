@@ -1,0 +1,1 @@
+/Users/tech387/Desktop/Projects/spartan-console-ember/tmp/funnel-input_base_path-TnMaot8o.tmp/components/welcome-page.js

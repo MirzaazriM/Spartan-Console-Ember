@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #454545;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+    </style>
+    <clipPath id="clip-path">
+      <path id="Path_129" data-name="Path 129" class="cls-1" d="M0,0H24V24H0Z"/>
+    </clipPath>
+  </defs>
+  <g id="baseline-timeline-24px" class="cls-2">
+    <path id="Path_128" data-name="Path 128" class="cls-1" d="M23,8a2.006,2.006,0,0,1-2,2,6.675,6.675,0,0,1-1,0l-3,3a6.675,6.675,0,0,1,0,1,2,2,0,0,1-4,0,6.675,6.675,0,0,1,0-1l-2-2a6.675,6.675,0,0,1-1,0,6.675,6.675,0,0,1-1,0L5,15a6.675,6.675,0,0,1,0,1,2,2,0,1,1-2-2,6.675,6.675,0,0,1,1,0l4-4A6.675,6.675,0,0,1,8,9a2,2,0,0,1,4,0,6.675,6.675,0,0,1,0,1l2,2a6.675,6.675,0,0,1,1,0,6.675,6.675,0,0,1,1,0l3-3a6.675,6.675,0,0,1,0-1,2,2,0,0,1,4,0Z"/>
+  </g>
+</svg>

@@ -1,0 +1,68 @@
+
+
+<div class="pageContainer">
+
+  {{add-edit-tab-package-component callSave=(action 'saveData') tabName='WORKOUTS' currentTab=currentTab}}
+
+  <div class="tabsContentContainer">
+
+    <div id="bas" class="tabContainer tabDisplayed">
+
+      <p> Set package basic info </p>
+
+      <div id="languageFilterSpecial" style="padding-bottom: 5px;">
+        {{language-filter-component filterValues=model.languages.data action='edit'}}
+      </div>
+
+      {{paper-input id="name" class="flex-50 paperInputs" label="Name" placeholder="Enter name" value=name onChange=(action (mut name))}}
+      {{paper-input id="rawname" class="flex-50 paperInputs" label="Rawname" placeholder="Enter rawname" value=rawname onChange=(action (mut rawname))}}
+      {{paper-input id="description" textarea=true block=true label="Description" maxlength=500 passThru=(hash rows=5 maxRows=5)
+                    value=biography onChange=(action (mut biography))}}
+
+    </div>
+
+    <!-- Tags container -->
+    <div id="tag" class="tabContainer">
+
+      <p> Set package tags </p>
+      <br/>
+      {{tags-list-component item=model.tags.data selectedTags=selectedTags}}
+    </div>
+
+    <div id="imag" class="tabContainer">
+      <p> Set package image </p>
+      <br/>
+      {{upload-image-component title='Plan image' oldImage=oldImage}}
+    </div>
+
+
+
+    <div id="plans">
+
+      <p> Set package plans </p>
+
+      {{search-input-component callSearch=(action 'search')}}
+
+      <br/>
+
+      <div id="nut" class="plansList">
+
+        {{plans-list-component list=model.nutplans.data selected=selectedNutritionPlans action='edit'}}
+
+      </div>
+
+
+      <div id="wor" class="plansList">
+
+        {{plans-list-component list=model.worplans.data selected=selectedWorkoutPlans action='edit'}}
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</div>
+
+{{outlet}}

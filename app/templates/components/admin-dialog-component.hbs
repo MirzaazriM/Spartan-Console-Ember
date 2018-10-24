@@ -1,0 +1,29 @@
+
+<div id="tagDialogContainer">
+  <p>{{heading}}</p>
+  <div>
+
+    <table>
+      <tr>
+        <td><span>Email: </span></td>
+        <td><input id="adminEmailInput" /></td>
+      </tr>
+
+      <tr>
+        <td><span>Scope: </span></td>
+        <td>{{admin-filter-component}}</td>
+      </tr>
+    </table>
+
+    <br/>
+
+    <!-- Dialog buttons -->
+    <div class="dialogButtonContainer">
+      <p class="cancelButton" {{action 'closeDialog'}}>Cancel</p>
+      <p class="addButton" {{action 'do'}}>{{buttonText}}</p>
+    </div>
+
+  </div>
+</div>
+
+{{yield}}

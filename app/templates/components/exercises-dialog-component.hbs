@@ -1,0 +1,30 @@
+
+<div id="exercisesDialogContainer">
+  <p>Choose exercises</p>
+
+  <!--<input id="exercisesDialogSearcher" type="text"/>-->
+  {{search-input-component callSearch=(action 'search')}}
+  <br/>
+
+  <div class="dialogExercisesContainer">
+
+    {{#each exercises as |exercise|}}
+      <div class="exercisePreview">
+        <div id="{{exercise.name}}" class="selectedExerciseOverlay" {{action 'selectExercise' exercise.name exercise.id exercise.thumbnail}}>
+          <img src="/assets/icons/check.svg" />
+        </div>
+        <img src="{{exercise.thumbnail}}" class="exerciseThumbnail" {{action 'selectExercise' exercise.name exercise.id exercise.thumbnail}}/>
+        <p>{{exercise.name}}</p>
+      </div>
+    {{/each}}
+
+  </div>
+
+  <div class="exerciseDialogButtons">
+    <span {{action 'exitDialog'}}>CANCEL</span>
+    <span {{action 'addExercisesToTheRound'}}>OK</span>
+  </div>
+
+</div>
+
+{{yield}}

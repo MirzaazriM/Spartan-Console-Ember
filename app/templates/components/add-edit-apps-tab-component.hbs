@@ -1,0 +1,18 @@
+
+
+<div class="addEditTab">
+
+  <div class="tabs">
+    <p id="basicTab" class="underlined" {{action 'changeTab' 'basicTab'}}> BASIC INFO </p>
+    <p id="packagesTab" {{action 'changeTab' 'packagesTab'}}> PACKAGES </p>
+    <p id="nutplansTab" {{action 'changeTab' 'nutplansTab'}}> NUTRITION PLANS </p>
+    <p id="worplansTab" {{action 'changeTab' 'worplansTab'}}> WORKOUT PLANS </p>
+    <p id="exercisesTab" {{action 'changeTab' 'exercisesTab'}}> EXERCISES </p>
+    <p id="tagsTab" {{action 'changeTab' 'tagsTab'}}> TAGS </p>
+  </div>
+
+  <p class="tabButton" {{action 'save'}}> Save </p>
+
+</div>
+
+{{yield}}

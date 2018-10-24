@@ -1,0 +1,11 @@
+
+<div id="workoutBehaviorFilter{{number}}">
+  <p id="workoutBehaviorFilterDefaultValue{{number}}" {{action 'toggleDropdown' bubbles=false}}>Regular</p>
+  <div id="workoutBehaviorFilterDropdown{{number}}" class="filterDropdown">
+    {{#each filterValues as |item index|}}
+      <p class="workoutBehaviorFilterItem" {{action 'changeFilter' index bubbles=false}}>{{item}}</p>
+    {{/each}}
+  </div>
+</div>
+
+{{yield}}

@@ -1,0 +1,11 @@
+
+<div id="difficultyFilter">
+  <p id="difficultyFilterDefaultValue" {{action 'toggleDropdown' bubbles=false}}>Medium</p>
+  <div id="difficultyFilterDropdown" class="filterDropdown">
+    {{#each filterValues as |item index|}}
+      <p class="difficultyFilterItem" {{action 'changeFilter' index bubbles=false}}>{{item}}</p>
+    {{/each}}
+  </div>
+</div>
+
+{{yield}}

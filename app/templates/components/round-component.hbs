@@ -1,0 +1,30 @@
+
+<div class="roundComponent">
+
+  <div class="roundHeading">
+    <span class="roundName">Round {{roundNumber}}</span>
+    <span class="addExercise" {{action 'openExercisesDialog'}}>ADD EXERCISES + </span>
+  </div>
+
+  <div id="exercises{{roundNumber}}" class="roundExercises">
+
+  </div>
+
+  <div class="roundInfo">
+
+    <p class="roundInfoHeading">Round Info</p>
+
+    <div class="roundInfoDropdowns">
+      {{workout-type-filter-component number=roundNumber}}
+      {{workout-behavior-filter-component number=roundNumber}}
+    </div>
+
+    <div class="roundInfoDurations">
+      {{paper-input class="flex-40 duration" label="Duration" type="number" value=duration onChange=(action (mut duration))}}
+      {{paper-input class="flex-40 restduration" label="Rest" type="number" value=restduration onChange=(action (mut restduration))}}
+    </div>
+  </div>
+
+</div>
+
+{{yield}}

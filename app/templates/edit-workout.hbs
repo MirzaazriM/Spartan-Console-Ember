@@ -1,0 +1,63 @@
+
+
+<div class="pageContainer">
+
+  {{add-edit-workouts-tab-component callSave=(action 'saveData')}}
+
+  <div class="tabsContentContainer">
+
+    <div id="bas" class="tabContainer tabDisplayed">
+
+      <p> Set workout basic info </p>
+
+      <div id="languageFilterSpecial" style="padding-bottom: 5px;">
+        {{language-filter-component filterValues=model.languages.data callLanguageData=(action 'getDataByLanguage') action='edit'}}
+      </div>
+
+      {{paper-input id="title" class="flex-50 paperInputs" label="Title" placeholder="Enter title" value=name onChange=(action (mut name))}}
+      {{paper-input id="description" textarea=true block=true label="Description" maxlength=500 passThru=(hash rows=5 maxRows=5)
+                    value=biography onChange=(action (mut biography))}}
+
+    </div>
+
+    <!-- Tags container -->
+    <div id="tag" class="tabContainer">
+      <p> Set workout regular tags </p>
+      <br/>
+      {{tags-list-component item=model.tags.data selectedTags=selectedRegularTags}}
+      <br/>
+      <p> Set workout equipment tags </p>
+      <br/>
+      {{tags-list-component item=model.tags.data selectedEquipmentTags=selectedEquipmentTags action=true editing=true}}
+    </div>
+
+    <div id="round" class="tabContainer">
+      <p> Set workout rounds </p>
+      <br/>
+
+      <div id="roundsContainer">
+
+        {{#each rounds as |number|}}
+          {{edit-round-component duration=duration restduration=restduration roundNumber=number currentRoundNumber=currentRoundNumber openedExerciseDialog=opened}}
+        {{/each}}
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<div id="addNewRound" {{action 'addNewRound'}}>
+  {{paper-fab-component icon='plus'}}
+</div>
+
+<!-- Set exercises dialog -->
+<div id="exercisesDialog" class="dialogWrapper">
+  <!-- Set component properties and closure action for triggering appropriate controller action -->
+  {{exercises-dialog-component opened=openedExerciseDialog exercises=model.exercises.data selectedExercises=selectedExercises callAddExercises=(action 'addExercisesToTheRound')}}
+
+</div>
+
+{{outlet}}

@@ -1,0 +1,15 @@
+<svg id="baseline-room_service-24px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <path id="Path_155" data-name="Path 155" class="cls-1" d="M0,0H64V64H0Z"/>
+  <path id="Path_156" data-name="Path 156" class="cls-2" d="M2,42.714H58V49H2ZM35.152,13.769a7.175,7.175,0,0,0,.448-2.483C35.6,7.829,33.08,5,30,5s-5.6,2.829-5.6,6.286a7.176,7.176,0,0,0,.448,2.483C13.9,16.314,5.556,26.78,4.8,39.571H55.2C54.444,26.78,46.1,16.314,35.152,13.769Z" transform="translate(2 5)"/>
+</svg>

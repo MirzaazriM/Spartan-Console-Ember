@@ -1,0 +1,39 @@
+
+
+<div class="pageContainer">
+
+  {{add-edit-tab-component callSave=(action 'saveData')}}
+
+  <div class="tabsContentContainer">
+
+    <div id="bas" class="tabContainer tabDisplayed">
+
+      <p> Set recipe basic info </p>
+
+      <div id="languageFilterSpecial" style="padding-bottom: 5px;">
+        {{language-filter-component filterValues=model.languages.data action='edit'}}
+      </div>
+
+      {{paper-input id="title" class="flex-50 paperInputs" label="Title" placeholder="Enter title" value=name onChange=(action (mut name))}}
+      {{paper-input id="description" textarea=true block=true label="Description" maxlength=500 passThru=(hash rows=5 maxRows=5)
+                    value=biography onChange=(action (mut biography))}}
+    </div>
+
+    <!-- Tags container -->
+    <div id="tag" class="tabContainer">
+      <p> Set recipe tags </p>
+
+      {{tags-list-component item=model.tags.data selectedTags=selectedTags}}
+    </div>
+
+    <div id="imag" class="tabContainer">
+      <p> Set recipe image </p>
+
+      {{upload-image-component title='Recipe image' oldImage=oldImage}}
+    </div>
+
+  </div>
+
+</div>
+
+{{outlet}}

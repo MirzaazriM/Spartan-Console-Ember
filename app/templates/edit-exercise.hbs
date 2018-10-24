@@ -1,0 +1,51 @@
+
+
+<div class="pageContainer">
+
+  {{add-edit-tab-component callSave=(action 'saveData')}}
+
+  <div class="tabsContentContainer">
+
+    <div id="bas" class="tabContainer tabDisplayed">
+
+      <p> Set exercise basic info </p>
+
+      <div class="exerciseInfoLeft">
+        <div id="languageFilterSpecial" style="padding-bottom: 5px;">
+          {{language-filter-component filterValues=model.languages.data action='edit'}}
+        </div>
+
+        {{exercise-difficulty-component action='edit' oldHardness=oldHardness}}
+      </div>
+
+      <div>
+        {{paper-input id="name" class="flex-50 paperInputs" label="Name" placeholder="Enter name" value=name onChange=(action (mut name))}}
+        {{paper-input id="rawname" class="flex-50 paperInputs" label="Rawname" placeholder="Enter rawname" value=rawname onChange=(action (mut rawname))}}
+      </div>
+
+    </div>
+
+    <!-- Tags container -->
+    <div id="tag" class="tabContainer">
+
+      <p> Set exercise tags </p>
+      <br/>
+      {{tags-list-component item=model.tags.data selectedTags=selectedTags}}
+    </div>
+
+    <div id="imag" class="tabContainer">
+      <p> Set exercise media </p>
+      <br/>
+      {{upload-image-component title='Exercise image' oldImage=oldImage}}
+      <br/>
+      {{upload-muscle-image-component oldImage=oldMuscleImage}}
+      <br/>
+      {{upload-media-component media=media action='edit'}}
+    </div>
+
+
+  </div>
+
+</div>
+
+{{outlet}}

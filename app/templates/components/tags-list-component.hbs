@@ -1,0 +1,16 @@
+
+{{#if action}}
+
+  {{#each item as |tag|}}
+    <span id="{{tag.name}}E" class="tagSpanElement" {{action 'selectTag' tag.name tag.id}}>{{tag.name}}</span>
+  {{/each}}
+
+  {{else}}
+
+  {{#each item as |tag|}}
+    <span id="{{tag.name}}" class="tagSpanElement" {{action 'selectTag' tag.name tag.id}}>{{tag.name}}</span>
+  {{/each}}
+
+{{/if}}
+
+{{yield}}

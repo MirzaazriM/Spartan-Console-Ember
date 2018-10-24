@@ -1,0 +1,11 @@
+
+<div id="statefilterDropdown" class="arrow_boxFilter">
+    {{!action 'stopPropagation' bubbles=false}}
+
+    {{#each states as |state|}}
+      <p {{action "chooseState" state bubbles=false}} class="statefilterItem">{{state}}</p>
+    {{/each}}
+
+</div>
+
+{{yield}}

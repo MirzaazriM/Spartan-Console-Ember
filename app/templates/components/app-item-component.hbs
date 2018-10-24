@@ -1,0 +1,16 @@
+
+  <table class="appsTable" {{action 'goToEditPage' item.id}}>
+    <tr>
+      <td class="appsTitle">
+        <p>{{item.name}}</p>
+      </td>
+      <td class="appsIdentifier">{{item.identifier}}</td>
+      <td class="appsAction">
+        <img src="/assets/icons/delete.svg" class="{{check-delete-button item.state}}" {{action 'openDeleteDialog' item.id bubbles=false}} />
+        <!--<img src="/assets/icons/pencil.svg" />-->
+      </td>
+    </tr>
+  </table>
+
+
+{{yield}}

@@ -1,0 +1,53 @@
+md-autocomplete {
+
+          background: paper-color($background, "A100");
+          background: RGB(var(--background-A100));
+        
+  &[disabled]:not([md-floating-label]) {
+
+          background: paper-color($background, "100");
+          background: RGB(var(--background-100));
+        
+  }
+  button {
+    md-icon {
+      path {
+
+          fill: paper-color($background, "600");
+          fill: RGB(var(--background-600));
+        
+      }
+    }
+    &:after {
+
+          background: rgba(paper-color($background, "600"), 0.3);
+          background: RGBA(var(--background-600), 0.3);
+        
+    }
+  }
+  input {
+
+          color: paper-color($foreground, "1");
+          color: var(--foreground-1);
+        
+  }
+}
+.md-autocomplete-suggestions-container {
+
+          background: paper-color($background, "A100");
+          background: RGB(var(--background-A100));
+        
+  li {
+
+          color: paper-color($foreground, "1");
+          color: var(--foreground-1);
+        
+    &:hover,
+    &.selected {
+
+          background: rgba(paper-color($background, "500"), 0.18);
+          background: RGBA(var(--background-500), 0.18);
+        
+    }
+  }
+}

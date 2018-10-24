@@ -1,0 +1,15 @@
+md-backdrop {
+
+
+          background-color: rgba(paper-color($background, "900"), 0.0);
+          background-color: RGBA(var(--background-900), 0.0);
+        
+
+  &.md-opaque {
+
+          background-color: rgba(paper-color($background, "900"), 1.0);
+          background-color: RGBA(var(--background-900), 1.0);
+        
+  }
+
+}

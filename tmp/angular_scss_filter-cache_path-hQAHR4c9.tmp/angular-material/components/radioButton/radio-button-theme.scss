@@ -1,0 +1,167 @@
+
+md-radio-button {
+  .md-off {
+
+          border-color: paper-color($foreground, "2");
+          border-color: var(--foreground-2);
+        
+  }
+
+  .md-on {
+
+          background-color: rgba(paper-color($accent, "500"), 0.87);
+          background-color: RGBA(var(--accent-500), 0.87);
+        
+  }
+  &.md-checked .md-off {
+
+          border-color: rgba(paper-color($accent, "500"), 0.87);
+          border-color: RGBA(var(--accent-500), 0.87);
+        
+  }
+  &.md-checked .md-ink-ripple {
+
+          color: rgba(paper-color($accent, "500"), 0.87);
+          color: RGBA(var(--accent-500), 0.87);
+        
+  }
+  .md-container .md-ripple {
+
+          color: paper-color($accent, "A700");
+          color: RGB(var(--accent-A700));
+        
+  }
+}
+
+md-radio-group,
+md-radio-button {
+
+  &:not([disabled]) {
+    .md-primary,
+    &.md-primary {
+      .md-on {
+
+          background-color: rgba(paper-color($primary, "500"), 0.87);
+          background-color: RGBA(var(--primary-500), 0.87);
+        
+      }
+      .md-checked,
+      &.md-checked {
+        .md-off {
+
+          border-color: rgba(paper-color($primary, "500"), 0.87);
+          border-color: RGBA(var(--primary-500), 0.87);
+        
+        }
+      }
+      .md-checked,
+      &.md-checked {
+        .md-ink-ripple {
+
+          color: rgba(paper-color($primary, "500"), 0.87);
+          color: RGBA(var(--primary-500), 0.87);
+        
+        }
+      }
+      .md-container .md-ripple {
+
+          color: paper-color($primary, "600");
+          color: RGB(var(--primary-600));
+        
+      }
+    }
+
+    .md-warn,
+    &.md-warn {
+      .md-on {
+
+          background-color: rgba(paper-color($warn, "500"), 0.87);
+          background-color: RGBA(var(--warn-500), 0.87);
+        
+      }
+      .md-checked,
+      &.md-checked {
+        .md-off {
+
+          border-color: rgba(paper-color($warn, "500"), 0.87);
+          border-color: RGBA(var(--warn-500), 0.87);
+        
+        }
+      }
+      .md-checked,
+      &.md-checked {
+        .md-ink-ripple {
+
+          color: rgba(paper-color($warn, "500"), 0.87);
+          color: RGBA(var(--warn-500), 0.87);
+        
+        }
+      }
+      .md-container .md-ripple {
+
+          color: paper-color($warn, "600");
+          color: RGB(var(--warn-600));
+        
+      }
+    }
+
+  }
+
+  &[disabled] {
+
+          color: paper-color($foreground, "3");
+          color: var(--foreground-3);
+        
+
+    .md-container .md-off {
+
+          border-color: paper-color($foreground, "3");
+          border-color: var(--foreground-3);
+        
+    }
+    .md-container .md-on {
+
+          border-color: paper-color($foreground, "3");
+          border-color: var(--foreground-3);
+        
+    }
+  }
+
+}
+md-radio-group {
+  .md-checked .md-ink-ripple {
+
+          color: rgba(paper-color($accent, "500"), 0.26);
+          color: RGBA(var(--accent-500), 0.26);
+        
+  }
+  &.md-primary .md-checked:not([disabled]) .md-ink-ripple, .md-checked:not([disabled]).md-primary .md-ink-ripple {
+
+          color: rgba(paper-color($primary, "500"), 0.26);
+          color: RGBA(var(--primary-500), 0.26);
+        
+  }
+}
+
+md-radio-group.md-focused:not(:empty) {
+  .md-checked .md-container:before {
+
+          background-color: rgba(paper-color($accent, "500"), 0.26);
+          background-color: RGBA(var(--accent-500), 0.26);
+        
+  }
+  &.md-primary .md-checked .md-container:before,
+  .md-checked.md-primary .md-container:before {
+
+          background-color: rgba(paper-color($primary, "500"), 0.26);
+          background-color: RGBA(var(--primary-500), 0.26);
+        
+  }
+  &.md-warn .md-checked .md-container:before,
+  .md-checked.md-warn .md-container:before {
+
+          background-color: rgba(paper-color($warn, "500"), 0.26);
+          background-color: RGBA(var(--warn-500), 0.26);
+        
+  }
+}

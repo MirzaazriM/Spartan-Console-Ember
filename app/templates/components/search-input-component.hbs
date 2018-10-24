@@ -1,0 +1,13 @@
+
+<div id="searchContainer">
+  <input id="{{id}}" placeholder="Search..." onkeyup={{action 'search'}}/>
+  <img id="searchIcon" src="/assets/icons/magnify.svg" />
+
+  {{#if filter}}
+    <img id="filterIcon" src="/assets/icons/filter-variant.svg" {{action "toggleStatefilter" bubbles=false}} />
+    {{state-filter-component currentState=currentState callFiltering=(action "filter")}}
+  {{/if}}
+
+</div>
+
+{{yield}}

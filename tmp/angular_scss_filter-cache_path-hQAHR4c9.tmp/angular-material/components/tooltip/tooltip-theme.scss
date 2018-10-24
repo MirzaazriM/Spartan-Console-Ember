@@ -1,0 +1,10 @@
+.md-panel.md-tooltip {
+
+          color: paper-contrast-color($background, "700");
+          color: RGB(var(--background-700-contrast));
+        
+
+          background-color: paper-color($background, "700");
+          background-color: RGB(var(--background-700));
+        
+}

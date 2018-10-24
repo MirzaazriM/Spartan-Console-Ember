@@ -1,0 +1,35 @@
+
+<div class="pageContainer">
+
+  {{search-input-component callSearch=(action 'search')}}
+
+  <br/>
+  <br/>
+
+  <div id="tagsPage">
+
+    {{#each model.tags.data as |tag|}}
+      {{tag-item-component item=tag currentId=currentTagId message=dialogMessage function=functionName editText=editText callOpenEditTagDialog=(action 'openEditTagDialog')}}
+    {{/each}}
+
+  </div>
+
+  <div {{action 'openAddTagDialog'}}>
+    {{paper-fab-component icon='plus'}}
+  </div>
+
+</div>
+
+<!-- Set confirmation dialog -->
+<div id="confirmationDialog" class="dialogWrapper confirmationDialog">
+  <!-- Set component properties and closure action for triggering appropriate controller action -->
+  {{confirmation-dialog-component item=dialogMessage call=(action functionName)}}
+</div>
+
+<!-- Set tag dialog -->
+<div id="tagDialog" class="dialogWrapper tagDialog">
+  <!-- Set component properties and closure action for triggering appropriate controller action -->
+  {{tag-dialog-component languages=model.languages.data heading=dialogHeading callAddTag=(action 'addTag') callEditTag=(action 'editTag')}}
+</div>
+
+{{outlet}}

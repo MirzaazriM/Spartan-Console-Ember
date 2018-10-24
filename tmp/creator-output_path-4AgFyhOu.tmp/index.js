@@ -1,0 +1,1 @@
+export { default } from 'spartan-console/config/environment';

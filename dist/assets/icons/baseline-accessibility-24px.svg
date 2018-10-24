@@ -1,0 +1,15 @@
+<svg id="baseline-accessibility-24px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #454545;
+      }
+    </style>
+  </defs>
+  <path id="Path_120" data-name="Path 120" class="cls-1" d="M0,0H24V24H0Z"/>
+  <path id="Path_121" data-name="Path 121" class="cls-2" d="M12,2a2,2,0,1,1-2,2A2.006,2.006,0,0,1,12,2Zm9,7H15V22H13V16H11v6H9V9H3V7H21Z"/>
+</svg>

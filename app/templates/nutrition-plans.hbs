@@ -1,0 +1,27 @@
+
+<div class="pageContainer">
+
+  {{search-input-component callSearch=(action 'search') callFilterStates=(action "filter") filter=true currentState=currentState}}
+
+  <br/>
+  <br/>
+
+  <div id="planPage">
+
+    {{#each model.data as |plan|}}
+      {{nutritionplan-item-component item=plan currentId=currentPlanId message=dialogMessage function=functionName}}
+    {{/each}}
+
+  </div>
+
+</div>
+
+{{paper-fab-component icon='plus' page='add-nutrition-plan'}}
+
+<!-- Set confirmation dialog -->
+<div id="confirmationDialog" class="dialogWrapper confirmationDialog">
+  <!-- Set component properties and closure action for triggering appropriate controller action -->
+  {{confirmation-dialog-component item=dialogMessage call=(action functionName)}}
+</div>
+
+{{outlet}}

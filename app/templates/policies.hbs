@@ -1,0 +1,38 @@
+
+
+<div class="pageContainer">
+
+  <div id="policyPage">
+    <div id="policiesList">
+
+      {{#each model.data as |policy index|}}
+        {{policy-list-item-component item=policy currentPolicy=currentPolicy}}
+      {{/each}}
+    </div>
+
+    <div id="policyPreviewContainer">
+      <div id="policyPreview">
+        {{policy-body-component item=model.data.0.body}}   {{!model.data.0.body}}
+      </div>
+
+      <div id="policyActions">
+        <img src="/assets/icons/pencil.svg" {{action 'goToEditPolicyPage'}}/>
+        <img src="/assets/icons/delete.svg" {{action 'openConfirmationDialog'}}/>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<div {{action 'goToAddPolicyPage'}}>
+  {{paper-fab-component icon='plus'}}
+</div>
+
+<!-- Set confirmation dialog -->
+<div id="confirmationDialog" class="dialogWrapper confirmationDialog">
+  <!-- Set component properties and closure action for triggering appropriate controller action -->
+  {{confirmation-dialog-component item='This will delete selected policy.' call=(action 'deletePolicy')}}
+</div>
+
+{{outlet}}

@@ -1,0 +1,8 @@
+md-sidenav {
+  &, md-content {
+
+          background-color: paper-color($background, "A100");
+          background-color: RGB(var(--background-A100));
+        
+  }
+}

@@ -1,0 +1,259 @@
+md-input-container {
+
+  // The asterisk of the select should always use the warn color.
+  md-select .md-select-value {
+    span:first-child:after {
+
+          color: paper-color($warn, "A700");
+          color: RGB(var(--warn-A700));
+        
+    }
+  }
+
+  // When the select is blurred and not invalid then the asterisk should use the foreground color.
+  &:not(.md-input-focused):not(.md-input-invalid) {
+    md-select .md-select-value {
+      span:first-child:after {
+
+          color: paper-color($foreground, "3");
+          color: var(--foreground-3);
+        
+      }
+    }
+  }
+
+  &.md-input-focused:not(.md-input-has-value) {
+    md-select .md-select-value {
+
+          color: paper-color($primary, "500");
+          color: RGB(var(--primary-500));
+        
+
+      &.md-select-placeholder {
+
+          color: paper-color($primary, "500");
+          color: RGB(var(--primary-500));
+        
+      }
+    }
+  }
+
+  &.md-input-invalid {
+    md-select .md-select-value {
+
+          color: paper-color($warn, "A700") !important;
+          color: RGB(var(--warn-A700)) !important;
+        
+
+          border-bottom-color: paper-color($warn, "A700") !important;
+          border-bottom-color: RGB(var(--warn-A700)) !important;
+        
+    }
+
+    md-select.md-no-underline .md-select-value {
+      border-bottom-color: transparent !important;
+    }
+  }
+
+}
+
+md-select {
+  &[disabled] .md-select-value {
+    border-bottom-color: transparent;
+
+          background-image: linear-gradient(to right, paper-color($foreground, "3") 0%, paper-color($foreground, "3") 33%, transparent 0%);
+          background-image: linear-gradient(to right, var(--foreground-3) 0%, var(--foreground-3) 33%, transparent 0%);
+        
+
+          background-image: -ms-linear-gradient(left, transparent 0%, paper-color($foreground, "3") 100%);
+          background-image: -ms-linear-gradient(left, transparent 0%, var(--foreground-3) 100%);
+        
+  }
+
+  .md-select-value {
+
+          border-bottom-color: paper-color($foreground, "4");
+          border-bottom-color: var(--foreground-4);
+        
+
+    &.md-select-placeholder {
+
+          color: paper-color($foreground, "3");
+          color: var(--foreground-3);
+        
+    }
+
+    span:first-child:after {
+
+          color: paper-color($warn, "A700");
+          color: RGB(var(--warn-A700));
+        
+    }
+  }
+
+  &.md-no-underline .md-select-value {
+    border-bottom-color: transparent !important;
+  }
+
+  &.ng-invalid.ng-touched {
+    .md-select-value {
+
+          color: paper-color($warn, "A700") !important;
+          color: RGB(var(--warn-A700)) !important;
+        
+
+          border-bottom-color: paper-color($warn, "A700") !important;
+          border-bottom-color: RGB(var(--warn-A700)) !important;
+        
+    }
+
+    &.md-no-underline .md-select-value {
+      border-bottom-color: transparent !important;
+    }
+  }
+
+  &:not([disabled]):focus {
+    .md-select-value {
+
+          border-bottom-color: paper-color($primary, "500");
+          border-bottom-color: RGB(var(--primary-500));
+        
+
+          color: paper-color($foreground, "1");
+          color: var(--foreground-1);
+        
+      &.md-select-placeholder {
+
+          color: paper-color($foreground, "1");
+          color: var(--foreground-1);
+        
+      }
+    }
+
+    &.md-no-underline .md-select-value {
+      border-bottom-color: transparent !important;
+    }
+
+    &.md-accent .md-select-value {
+
+          border-bottom-color: paper-color($accent, "500");
+          border-bottom-color: RGB(var(--accent-500));
+        
+    }
+
+    &.md-warn .md-select-value {
+
+          border-bottom-color: paper-color($warn, "500");
+          border-bottom-color: RGB(var(--warn-500));
+        
+    }
+  }
+
+  &[disabled] {
+    .md-select-value {
+
+          color: paper-color($foreground, "3");
+          color: var(--foreground-3);
+        
+
+      &.md-select-placeholder {
+
+          color: paper-color($foreground, "3");
+          color: var(--foreground-3);
+        
+      }
+    }
+
+    .md-select-icon {
+
+          color: paper-color($foreground, "3");
+          color: var(--foreground-3);
+        
+    }
+  }
+
+  .md-select-icon {
+
+          color: paper-color($foreground, "2");
+          color: var(--foreground-2);
+        
+  }
+}
+
+md-select-menu {
+  md-content {
+
+          background-color: paper-color($background, "A100");
+          background-color: RGB(var(--background-A100));
+        
+
+    md-optgroup {
+
+          color: paper-color($foreground, "2");
+          color: var(--foreground-2);
+        
+    }
+
+    md-option {
+
+          color: paper-color($foreground, "1");
+          color: var(--foreground-1);
+        
+
+      &[disabled] {
+        .md-text {
+
+          color: paper-color($foreground, "3");
+          color: var(--foreground-3);
+        
+        }
+      }
+
+      &:not([disabled]) {
+        &:focus,
+        &:hover {
+
+          background-color: rgba(paper-color($background, "500"), 0.18);
+          background-color: RGBA(var(--background-500), 0.18);
+        
+        }
+      }
+
+      &[selected] {
+
+          color: paper-color($primary, "500");
+          color: RGB(var(--primary-500));
+        
+        &:focus {
+
+          color: paper-color($primary, "600");
+          color: RGB(var(--primary-600));
+        
+        }
+        &.md-accent {
+
+          color: paper-color($accent, "500");
+          color: RGB(var(--accent-500));
+        
+          &:focus {
+
+          color: paper-color($accent, "A700");
+          color: RGB(var(--accent-A700));
+        
+          }
+        }
+      }
+    }
+  }
+}
+
+.md-checkbox-enabled {
+  @include checkbox-primary('[selected]');
+
+  md-option .md-text {
+
+          color: paper-color($foreground, "1");
+          color: var(--foreground-1);
+        
+  }
+}

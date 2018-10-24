@@ -1,0 +1,20 @@
+
+
+<div class="pageContainer">
+
+  {{search-input-component callSearch=(action 'search')}}
+
+  <br/>
+  <br/>
+
+  <div id="appsPage">
+
+    {{#each model as |user|}}
+      {{user-item-component item=user}}
+    {{/each}}
+
+  </div>
+
+</div>
+
+{{outlet}}

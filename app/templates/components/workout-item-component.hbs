@@ -1,0 +1,18 @@
+
+<table class="workoutTable" {{action 'goToEditPage' item.id}}>
+  <tr>
+    <td class="workoutTitle">{{item.name}}</td>
+    <td class="workoutState">
+      <p {{action 'openPublishDialog' item.id bubbles=false}} class="publishedButton {{set-published-button-text item.state}}"  style={{set-published-button-appearence item.state}}>
+        {{set-published-button-text item.state}}
+      </p>
+    </td>
+    <td class="workoutAction">
+      <img src="/assets/icons/delete.svg" class="{{check-delete-button item.state}}" {{action 'openDeleteDialog' item.id bubbles=false}}/>
+      <!--<img src="/assets/icons/pencil.svg"/>-->
+    </td>
+  </tr>
+</table>
+
+
+{{yield}}

@@ -1,0 +1,15 @@
+<svg id="baseline-restaurant-24px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #454545;
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <path id="Path_255" data-name="Path 255" class="cls-1" d="M11,9H9V2H7V9H5V2H3V9a3.986,3.986,0,0,0,3.75,3.97V22h2.5V12.97A3.986,3.986,0,0,0,13,9V2H11Zm5-3v8h2.5v8H21V2C18.24,2,16,4.24,16,6Z"/>
+  <path id="Path_256" data-name="Path 256" class="cls-2" d="M0,0H24V24H0Z"/>
+</svg>

@@ -1,0 +1,35 @@
+
+<div id="tagDialogContainer">
+  <p>{{heading}}</p>
+  <div>
+
+    <table>
+      <tr>
+        <td><span>Name: </span></td>
+        <td><input id="tagText" /></td>
+      </tr>
+
+      <tr>
+        <td><span>Language: </span></td>
+        <!-- Set action to edit to prevent calling function for loading new language data-->
+        <td>{{language-filter-component filterValues=languages action='edit'}}</td>
+      </tr>
+
+      <tr style="margin-top: 0;">
+        <td><span>Type: </span></td>
+        <td>{{type-filter-component}}</td>
+      </tr>
+    </table>
+
+    <br/>
+
+    <!-- Dialog buttons -->
+    <div class="dialogButtonContainer">
+      <p class="cancelButton" {{action 'closeDialog'}}>Cancel</p>
+      <p class="addButton" {{action 'do'}}>{{buttonText}}</p>
+    </div>
+
+  </div>
+</div>
+
+{{yield}}

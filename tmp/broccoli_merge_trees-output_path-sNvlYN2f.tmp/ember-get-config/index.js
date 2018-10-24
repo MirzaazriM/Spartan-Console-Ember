@@ -1,0 +1,1 @@
+/Users/tech387/Desktop/Projects/spartan-console-ember/tmp/broccoli_merge_trees-input_base_path-mhgvholI.tmp/4/ember-get-config/index.js

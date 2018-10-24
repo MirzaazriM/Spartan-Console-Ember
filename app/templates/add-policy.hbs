@@ -1,0 +1,20 @@
+
+<div class="pageContainer">
+
+  <p class="policyHeading">Policy title: </p>
+  <div id="titleContainer" class="addEditPolicyPage">
+    {{pell-editor}}
+  </div>
+
+  <p class="policyHeading">Policy body: </p>
+  <div id="bodyContainer" class="addEditPolicyPage">
+    {{pell-editor}}
+  </div>
+
+</div>
+
+<div {{action 'savePolicy'}}>
+  {{paper-fab-component icon='content-save'}}
+</div>
+
+{{outlet}}

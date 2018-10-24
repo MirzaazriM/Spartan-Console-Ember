@@ -1,0 +1,73 @@
+
+
+<div class="pageContainer">
+
+  {{add-edit-apps-tab-component callSave=(action 'saveData') tabName='WORKOUTS' currentTab=currentTab}}
+
+  <div class="tabsContentContainer">
+
+    <div id="bas" class="tabContainer tabDisplayed">
+
+      <p> Set app basic info </p>
+
+      {{paper-input id="name" class="flex-50 paperInputs" label="Name" placeholder="Enter name" value=name onChange=(action (mut name))}}
+      {{paper-input id="identifier" class="flex-50 paperInputs" label="Identifier" placeholder="Enter identifier" value=identifier onChange=(action (mut identifier))}}
+
+    </div>
+
+    <!-- Package container -->
+    <div id="pack" class="tabContainer">
+
+      <p> Set app packages </p>
+      <br/>
+      {{packages-list-component list=model.packagesList.data appPackages=appPackages}}
+    </div>
+
+
+    <!-- Plans -->
+    <div id="plans">
+
+      <p> Package plans </p>
+
+      <br/>
+
+      <div id="nut" class="plansList" style="pointer-events: none">
+
+        {{plans-list-component list=model.nutplans.data}}
+
+      </div>
+
+
+      <div id="wor" class="plansList" style="pointer-events: none">
+
+        {{plans-list-component list=model.worplans.data}}
+
+      </div>
+
+
+    </div>
+
+
+    <!-- Exercise container -->
+    <div id="exer" class="tabContainer" style="pointer-events: none">
+
+      <p> Package exercises </p>
+      <br/>
+      {{exercise-list-component list=model.exercises.data}}
+    </div>
+
+
+    <!-- Tags container -->
+    <div id="tag" class="tabContainer" style="pointer-events: none">
+
+      <p> Package tags </p>
+      <br/>
+      {{tags-list-component item=packageTags}}
+    </div>
+
+  </div>
+
+</div>
+
+
+{{outlet}}

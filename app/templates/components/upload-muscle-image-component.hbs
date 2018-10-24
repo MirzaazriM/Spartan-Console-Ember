@@ -1,0 +1,13 @@
+
+<div id="uploadMuscleImageComponent">
+  <div>
+    <p>Muscle image</p>
+    <p>Recommended size: 1024 x 512</p>
+    <p>Types: .JPEG, .PNG</p>
+  </div>
+
+  <!-- Element which opens browse window on click -->
+  <img id="uploadMuscleImageElement" src="{{oldImage}}" class="addImageElement" {{action 'openUploadMuscleImageWindow'}} />
+</div>
+
+{{yield}}

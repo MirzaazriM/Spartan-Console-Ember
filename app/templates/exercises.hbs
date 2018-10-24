@@ -1,0 +1,27 @@
+
+<div class="pageContainer">
+
+  {{search-input-component callSearch=(action 'search')}}
+
+  <br/>
+  <br/>
+
+  <div id="exercisesPage">
+
+    {{#each model.data as |exercise|}}
+      {{exercise-item-component item=exercise currentId=currentExerciseId message=dialogMessage function=functionName}}
+    {{/each}}
+
+  </div>
+
+</div>
+
+{{paper-fab-component icon='plus' page='add-exercise'}}
+
+<!-- Set confirmation dialog -->
+<div id="confirmationDialog" class="dialogWrapper confirmationDialog">
+  <!-- Set component properties and closure action for triggering appropriate controller action -->
+  {{confirmation-dialog-component item=dialogMessage call=(action functionName)}}
+</div>
+
+{{outlet}}

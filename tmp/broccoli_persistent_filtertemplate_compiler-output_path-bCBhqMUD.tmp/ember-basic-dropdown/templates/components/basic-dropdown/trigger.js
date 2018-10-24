@@ -1,0 +1,1 @@
+export default Ember.HTMLBars.template({"id":"Gyk02zzo","block":"{\"symbols\":[\"&default\"],\"statements\":[[14,1]],\"hasEval\":false}","meta":{"moduleName":"ember-basic-dropdown/templates/components/basic-dropdown/trigger.hbs"}});

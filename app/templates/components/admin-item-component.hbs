@@ -1,0 +1,16 @@
+
+<table>
+  <tr class="adminRow">
+    <td id="adminName" class="adminTd">{{item.name}}</td>
+    <td id="adminSurname" class="adminTd">{{item.surname}}</td>
+    <td id="adminEmail" class="adminTd">{{item.email}}</td>
+    <td id="adminScope" class="adminTd">{{item.scope}}</td>
+    <td id="adminState" class="adminTd" style={{color-item-state item.state}}>{{item.state}}</td>
+    <td id="adminAction" class="adminTd">
+      <img src="/assets/icons/pencil.svg" {{action 'openEditAdminDialog' item.id}} />
+      <img src="/assets/icons/delete.svg" {{action 'openDialog' item.id}}/>
+    </td>
+  </tr>
+</table>
+
+{{yield}}

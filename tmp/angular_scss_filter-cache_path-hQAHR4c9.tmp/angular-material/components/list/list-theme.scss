@@ -1,0 +1,54 @@
+md-list {
+  md-list-item.md-2-line .md-list-item-text,
+  md-list-item.md-3-line .md-list-item-text {
+    h3, h4 {
+
+          color: paper-color($foreground, "1");
+          color: var(--foreground-1);
+        
+    }
+    p {
+
+          color: paper-color($foreground, "2");
+          color: var(--foreground-2);
+        
+    }
+  }
+  .md-proxy-focus.md-focused div.md-no-style {
+
+          background-color: paper-color($background, "100");
+          background-color: RGB(var(--background-100));
+        
+  }
+
+  md-list-item .md-avatar-icon {
+
+          background-color: paper-color($foreground, "3");
+          background-color: var(--foreground-3);
+        
+
+          color: paper-color($background, "50");
+          color: RGB(var(--background-50));
+        
+  }
+
+  md-list-item > md-icon {
+
+          color: paper-color($foreground, "2");
+          color: var(--foreground-2);
+        
+
+    &.md-highlight {
+
+          color: paper-color($primary, "500");
+          color: RGB(var(--primary-500));
+        
+      &.md-accent {
+
+          color: paper-color($accent, "500");
+          color: RGB(var(--accent-500));
+        
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+
+
+<div class="pageContainer">
+
+  <div id="languagePage">
+    <p>Languages</p>
+
+    {{#each model.data as |language|}}
+      {{language-item-component item=language currentId=currentLanguageId}}
+    {{/each}}
+
+  </div>
+
+<div {{action 'openAddLanguageDialog'}}>
+  {{paper-fab-component icon='plus'}}
+</div>
+
+</div>
+
+<!-- Set confirmation dialog -->
+<div id="confirmationDialog" class="dialogWrapper confirmationDialog">
+  <!-- Set component properties and closure action for triggering appropriate controller action -->
+  {{confirmation-dialog-component item='This will delete selected language.' call=(action 'deleteLanguage')}}
+</div>
+
+
+<!-- Set language dialog -->
+<div id="languageDialog" class="dialogWrapper languageDialog">
+  <!-- Set component properties and closure action for triggering appropriate controller action -->
+  {{language-dialog-component callAddLanguage=(action 'addLanguage')}}
+</div>
+
+{{outlet}}

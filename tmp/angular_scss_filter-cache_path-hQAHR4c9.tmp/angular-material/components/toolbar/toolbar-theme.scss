@@ -1,0 +1,83 @@
+md-toolbar:not(.md-menu-toolbar) {
+
+          background-color: paper-color($primary, "500");
+          background-color: RGB(var(--primary-500));
+        
+
+          color: paper-contrast-color($primary, "500");
+          color: RGB(var(--primary-500-contrast));
+        
+
+  md-icon {
+
+          color: paper-contrast-color($primary, "500");
+          color: RGB(var(--primary-500-contrast));
+        
+
+          fill: paper-contrast-color($primary, "500");
+          fill: RGB(var(--primary-500-contrast));
+        
+  }
+
+  .md-button[disabled] md-icon {
+
+          color: rgba(paper-contrast-color($primary, "500"), 0.26);
+          color: RGBA(var(--primary-500-contrast), 0.26);
+        
+
+          fill: rgba(paper-contrast-color($primary, "500"), 0.26);
+          fill: RGBA(var(--primary-500-contrast), 0.26);
+        
+  }
+
+  &.md-accent {
+
+          background-color: paper-color($accent, "500");
+          background-color: RGB(var(--accent-500));
+        
+
+          color: paper-contrast-color($accent, "500");
+          color: RGB(var(--accent-500-contrast));
+        
+
+    .md-ink-ripple {
+
+          color: paper-contrast-color($accent, "500");
+          color: RGB(var(--accent-500-contrast));
+        
+    }
+
+    md-icon {
+
+          color: paper-contrast-color($accent, "500");
+          color: RGB(var(--accent-500-contrast));
+        
+
+          fill: paper-contrast-color($accent, "500");
+          fill: RGB(var(--accent-500-contrast));
+        
+    }
+
+    .md-button[disabled] md-icon {
+
+          color: rgba(paper-contrast-color($accent, "500"), 0.26);
+          color: RGBA(var(--accent-500-contrast), 0.26);
+        
+
+          fill: rgba(paper-contrast-color($accent, "500"), 0.26);
+          fill: RGBA(var(--accent-500-contrast), 0.26);
+        
+    }
+  }
+
+  &.md-warn {
+
+          background-color: paper-color($warn, "500");
+          background-color: RGB(var(--warn-500));
+        
+
+          color: paper-contrast-color($warn, "500");
+          color: RGB(var(--warn-500-contrast));
+        
+  }
+}

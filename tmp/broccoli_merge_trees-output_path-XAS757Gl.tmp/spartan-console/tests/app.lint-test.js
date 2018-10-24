@@ -1,0 +1,1 @@
+/Users/tech387/Desktop/Projects/spartan-console-ember/tmp/broccoli_merge_trees-input_base_path-C51CfZWo.tmp/2/spartan-console/tests/app.lint-test.js

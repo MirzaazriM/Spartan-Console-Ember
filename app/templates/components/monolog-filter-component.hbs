@@ -1,0 +1,11 @@
+
+<div id="monologFilter">
+  <p id="monologFilterDefaultValue" {{action 'toggleDropdown' bubbles=false}}>{{defaultFilter}}</p>
+  <div id="monologFilterDropdown" class="filterDropdown">
+    {{#each filterValues as |item index|}}
+      <p class="monologFilterItem" {{action 'changeFilter' index bubbles=false}}>{{item}}</p>
+    {{/each}}
+  </div>
+</div>
+
+{{yield}}

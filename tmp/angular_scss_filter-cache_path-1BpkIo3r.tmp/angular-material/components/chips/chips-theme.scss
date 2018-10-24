@@ -1,0 +1,94 @@
+md-chips {
+
+  .md-chips {
+
+          box-shadow: 0 1px paper-color($foreground, "4");
+          box-shadow: 0 1px var(--foreground-4);
+        
+
+    &.md-focused {
+
+          box-shadow: 0 2px paper-color($primary, "500");
+          box-shadow: 0 2px RGB(var(--primary-500));
+        
+    }
+
+    .md-chip-input-container {
+      input {
+
+          @include input-placeholder-color(paper-color($foreground, "3"));
+          @include input-placeholder-color(var(--foreground-3));
+        
+
+          color: paper-color($foreground, "1");
+          color: var(--foreground-1);
+        
+      }
+    }
+  }
+
+  md-chip {
+
+          background: paper-color($background, "300");
+          background: RGB(var(--background-300));
+        
+
+          color: paper-color($background, "800");
+          color: RGB(var(--background-800));
+        
+
+    md-icon {
+
+          color: paper-color($background, "700");
+          color: RGB(var(--background-700));
+        
+    }
+
+    &.md-focused {
+
+          background: paper-color($primary, "500");
+          background: RGB(var(--primary-500));
+        
+
+          color: paper-contrast-color($primary, "500");
+          color: RGB(var(--primary-500-contrast));
+        
+
+      md-icon {
+
+          color: paper-contrast-color($primary, "500");
+          color: RGB(var(--primary-500-contrast));
+        
+      }
+    }
+
+    &._md-chip-editing {
+      background: transparent;
+
+          color: paper-color($background, "800");
+          color: RGB(var(--background-800));
+        
+    }
+  }
+  md-chip-remove {
+    .md-button {
+      md-icon {
+        path {
+
+          fill: paper-color($background, "500");
+          fill: RGB(var(--background-500));
+        
+        }
+      }
+    }
+  }
+}
+
+.md-contact-suggestion {
+  span.md-contact-email {
+
+          color: paper-color($background, "400");
+          color: RGB(var(--background-400));
+        
+  }
+}

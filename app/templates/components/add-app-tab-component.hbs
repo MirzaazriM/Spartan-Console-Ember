@@ -1,0 +1,13 @@
+
+<div class="addEditTab">
+
+  <div class="tabs">
+    <p id="basicTab" class="underlined" {{action 'changeTab' 'basicTab'}}> BASIC INFO </p>
+    <p id="packagesTab" {{action 'changeTab' 'packagesTab'}}> PACKAGES </p>
+  </div>
+
+  <p class="tabButton" {{action 'save'}}> Save </p>
+
+</div>
+
+{{yield}}

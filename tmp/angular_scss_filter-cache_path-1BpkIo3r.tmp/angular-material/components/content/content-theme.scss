@@ -1,0 +1,12 @@
+md-content {
+
+          color: paper-color($foreground, "1");
+          color: var(--foreground-1);
+        
+
+          background-color: paper-color($background, "50");
+          background-color: RGB(var(--background-50));
+        
+}
+
+

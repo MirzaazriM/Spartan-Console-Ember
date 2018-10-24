@@ -1,0 +1,10 @@
+
+<div id="notificationsDropdown" class="arrow_box">
+  {{#each notifications as |item|}}
+    <div class="notificationsItem"  {{action 'stopPropagation' bubbles=false}}>
+      <p>Test {{item}}</p>
+    </div>
+  {{/each}}
+</div>
+
+{{yield}}

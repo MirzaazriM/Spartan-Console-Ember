@@ -1,0 +1,1 @@
+/Users/tech387/Desktop/Projects/spartan-console-ember/app/components/add-app-tab-component.js

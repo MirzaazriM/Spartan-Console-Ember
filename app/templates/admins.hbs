@@ -1,0 +1,32 @@
+
+
+<div class="pageContainer">
+
+  <div id="adminPage">
+    <p>Admins</p>
+
+      {{#each model.data as |admin|}}
+        {{admin-item-component item=admin editText=editText currentId=currentAdminId callEditAdmin=(action 'openEditAdminDialog')}}
+      {{/each}}
+
+  </div>
+
+  <div {{action 'openAddAdminDialog'}}>
+    {{paper-fab-component icon='plus'}}
+  </div>
+
+</div>
+
+<!-- Set confirmation dialog -->
+<div id="confirmationDialog" class="dialogWrapper confirmationDialog">
+  <!-- Set component properties and closure action for triggering appropriate controller action -->
+  {{confirmation-dialog-component item='This will delete selected admin.' call=(action 'deleteAdmin')}}
+</div>
+
+<!-- Set admin dialog -->
+<div id="adminDialog" class="dialogWrapper adminDialog">
+  <!-- Set component properties and closure action for triggering appropriate controller action -->
+  {{admin-dialog-component heading=dialogHeading callAddAdmin=(action 'addAdmin') callEditAdmin=(action 'editAdmin')}}
+</div>
+
+{{outlet}}

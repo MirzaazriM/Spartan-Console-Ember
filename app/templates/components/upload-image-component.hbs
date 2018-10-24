@@ -1,0 +1,14 @@
+
+<div id="uploadImageComponent">
+  <div>
+    <p>{{title}}</p>
+    <p>Recommended size: 1024 x 512</p>
+    <p>Types: .JPEG, .PNG</p>
+  </div>
+
+  <!-- Element which opens browse window on click -->
+  <img id="uploadImageElement" src="{{oldImage}}" class="addImageElement" {{action 'openUploadImageWindow'}} />
+</div>
+
+
+{{yield}}

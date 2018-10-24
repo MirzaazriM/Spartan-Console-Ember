@@ -1,0 +1,14 @@
+
+<div id="languageFilter">
+  <p id="languageFilterDefaultValue" {{action 'toggleDropdown' bubbles=false}}>English</p>
+
+  <span id="languageHiddenValue" style="display: none;">{{isoCode}}</span>
+
+  <div id="languageFilterDropdown" class="filterDropdown">
+    {{#each filterValues as |item index|}}
+      <p class="languageFilterItem" {{action 'changeFilter' index bubbles=false}}>{{item.name}}</p>
+    {{/each}}
+  </div>
+</div>
+
+{{yield}}

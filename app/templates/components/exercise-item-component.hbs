@@ -1,0 +1,22 @@
+
+<table class="exerciseTable" {{action 'goToEditPage' item.id}}>
+  <tr>
+    <td class="exerciseThumbnail">
+      <img src="{{item.thumbnail}}" />
+    </td>
+    <td class="exerciseTitle">
+      <p>{{item.name}}</p>
+    </td>
+    <td class="exerciseState">
+      <p {{action 'openPublishDialog' item.id bubbles=false}} class="publishedButton {{set-published-button-text item.state}}"  style={{set-published-button-appearence item.state}}>
+        {{set-published-button-text item.state}}
+      </p>
+    </td>
+    <td class="exerciseAction">
+      <img src="/assets/icons/delete.svg" class="{{check-delete-button item.state}}" {{action 'openDeleteDialog' item.id bubbles=false}} />
+      <!--<img src="/assets/icons/pencil.svg"/>-->
+    </td>
+  </tr>
+</table>
+
+{{yield}}

@@ -1,0 +1,15 @@
+<svg id="baseline-apps-24px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <path id="Path_176" data-name="Path 176" class="cls-1" d="M0,0H24V24H0Z"/>
+  <path id="baseline-notifications-24px" class="cls-2" d="M10.564,18.5a1.646,1.646,0,0,0,1.641-1.641H8.923A1.641,1.641,0,0,0,10.564,18.5Zm4.923-4.923v-4.1a5,5,0,0,0-3.692-5.186V3.731a1.231,1.231,0,1,0-2.462,0v.558A4.985,4.985,0,0,0,5.641,9.474v4.1L4,15.218v.821H17.128v-.821Z" transform="translate(1 1.5)"/>
+</svg>

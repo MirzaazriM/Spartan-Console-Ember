@@ -1,0 +1,31 @@
+
+
+<div class="pageContainer">
+
+  {{add-app-tab-component callSave=(action 'saveData') currentTab=currentTab}}
+
+  <div class="tabsContentContainer">
+
+    <div id="bas" class="tabContainer tabDisplayed">
+
+      <p> Set app basic info </p>
+
+      {{paper-input id="name" class="flex-50 paperInputs" label="Name" placeholder="Enter name" value=name onChange=(action (mut name))}}
+      {{paper-input id="identifier" class="flex-50 paperInputs" label="Identifier" placeholder="Enter identifier" value=identifier onChange=(action (mut identifier))}}
+
+    </div>
+
+    <!-- Package container -->
+    <div id="pack" class="tabContainer">
+
+      <p> Set app packages </p>
+      <br/>
+      {{packages-list-component list=model.packagesList.data}}
+    </div>
+
+  </div>
+
+</div>
+
+
+{{outlet}}

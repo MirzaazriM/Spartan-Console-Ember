@@ -1,0 +1,92 @@
+md-progress-linear {
+  .md-container {
+
+          background-color: paper-color($primary, "100");
+          background-color: RGB(var(--primary-100));
+        
+  }
+
+  .md-bar {
+
+          background-color: paper-color($primary, "500");
+          background-color: RGB(var(--primary-500));
+        
+  }
+
+  &.md-warn {
+    .md-container {
+
+          background-color: paper-color($warn, "100");
+          background-color: RGB(var(--warn-100));
+        
+    }
+
+    .md-bar {
+
+          background-color: paper-color($warn, "500");
+          background-color: RGB(var(--warn-500));
+        
+    }
+  }
+
+  &.md-accent {
+    .md-container {
+
+          background-color: paper-color($accent, "100");
+          background-color: RGB(var(--accent-100));
+        
+    }
+
+    .md-bar {
+
+          background-color: paper-color($accent, "500");
+          background-color: RGB(var(--accent-500));
+        
+    }
+  }
+
+  &[md-mode=buffer] {
+    &.md-primary {
+	  .md-bar1 {
+
+          background-color: paper-color($primary, "100");
+          background-color: RGB(var(--primary-100));
+        
+      }
+      .md-dashed:before {
+
+          background: radial-gradient(paper-color($primary, "100") 0%, paper-color($primary, "100") 16%, transparent 42%);
+          background: radial-gradient(RGB(var(--primary-100)) 0%, RGB(var(--primary-100)) 16%, transparent 42%);
+        
+      } 
+	}
+    &.md-warn {
+      .md-bar1 {
+
+          background-color: paper-color($warn, "100");
+          background-color: RGB(var(--warn-100));
+        
+      }
+      .md-dashed:before {
+
+          background: radial-gradient(paper-color($warn, "100") 0%, paper-color($warn, "100") 16%, transparent 42%);
+          background: radial-gradient(RGB(var(--warn-100)) 0%, RGB(var(--warn-100)) 16%, transparent 42%);
+        
+      }
+    }
+    &.md-accent {
+      .md-bar1 {
+
+          background-color: paper-color($accent, "100");
+          background-color: RGB(var(--accent-100));
+        
+      }
+      .md-dashed:before {
+
+          background: radial-gradient(paper-color($accent, "100") 0%, paper-color($accent, "100") 16%, transparent 42%);
+          background: radial-gradient(RGB(var(--accent-100)) 0%, RGB(var(--accent-100)) 16%, transparent 42%);
+        
+      }
+    }
+  }
+}

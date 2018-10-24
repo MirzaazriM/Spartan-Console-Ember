@@ -1,0 +1,1 @@
+export default Ember.HTMLBars.template({"id":"PKxw3RL+","block":"{\"symbols\":[\"&default\"],\"statements\":[[1,[27,\"unbound\",[[23,[\"_wormholeHeadNode\"]]],null],false],[14,1],[1,[27,\"unbound\",[[23,[\"_wormholeTailNode\"]]],null],false]],\"hasEval\":false}","meta":{"moduleName":"ember-wormhole/templates/components/ember-wormhole.hbs"}});

@@ -1,0 +1,8 @@
+define("spartan-console/templates/components/admin-dialog-component", ["exports"], function (exports) {
+  "use strict";
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = Ember.HTMLBars.template({ "id": "bkx9sbJW", "block": "{\"symbols\":[\"&default\"],\"statements\":[[0,\"\\n\"],[7,\"div\"],[11,\"id\",\"tagDialogContainer\"],[9],[0,\"\\n  \"],[7,\"p\"],[9],[1,[21,\"heading\"],false],[10],[0,\"\\n  \"],[7,\"div\"],[9],[0,\"\\n\\n    \"],[7,\"table\"],[9],[0,\"\\n      \"],[7,\"tr\"],[9],[0,\"\\n        \"],[7,\"td\"],[9],[7,\"span\"],[9],[0,\"Email: \"],[10],[10],[0,\"\\n        \"],[7,\"td\"],[9],[7,\"input\"],[11,\"id\",\"adminEmailInput\"],[9],[10],[10],[0,\"\\n      \"],[10],[0,\"\\n\\n      \"],[7,\"tr\"],[9],[0,\"\\n        \"],[7,\"td\"],[9],[7,\"span\"],[9],[0,\"Scope: \"],[10],[10],[0,\"\\n        \"],[7,\"td\"],[9],[1,[21,\"admin-filter-component\"],false],[10],[0,\"\\n      \"],[10],[0,\"\\n    \"],[10],[0,\"\\n\\n    \"],[7,\"br\"],[9],[10],[0,\"\\n\\n    \"],[2,\" Dialog buttons \"],[0,\"\\n    \"],[7,\"div\"],[11,\"class\",\"dialogButtonContainer\"],[9],[0,\"\\n      \"],[7,\"p\"],[11,\"class\",\"cancelButton\"],[3,\"action\",[[22,0,[]],\"closeDialog\"]],[9],[0,\"Cancel\"],[10],[0,\"\\n      \"],[7,\"p\"],[11,\"class\",\"addButton\"],[3,\"action\",[[22,0,[]],\"do\"]],[9],[1,[21,\"buttonText\"],false],[10],[0,\"\\n    \"],[10],[0,\"\\n\\n  \"],[10],[0,\"\\n\"],[10],[0,\"\\n\\n\"],[14,1]],\"hasEval\":false}", "meta": { "moduleName": "spartan-console/templates/components/admin-dialog-component.hbs" } });
+});

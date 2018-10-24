@@ -1,0 +1,1 @@
+export default Ember.HTMLBars.template({"id":"AoKLXdwG","block":"{\"symbols\":[],\"statements\":[[1,[21,\"outlet\"],false]],\"hasEval\":false}","meta":{"moduleName":"spartan-console/templates/index.hbs"}});

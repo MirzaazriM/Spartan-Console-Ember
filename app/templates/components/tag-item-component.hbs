@@ -1,0 +1,17 @@
+
+<table class="tagTable">
+  <tr>
+    <td>{{item.name}}</td>
+    <td>
+      <p {{action 'openPublishDialog' item.id}} class="publishedButton {{set-published-button-text item.state}}"  style={{set-published-button-appearence item.state}}>
+        {{set-published-button-text item.state}}
+      </p>
+    </td>
+    <td>
+      <img src="/assets/icons/pencil.svg" {{action 'openEditTagDialog' item.id}}/>
+      <img src="/assets/icons/delete.svg" class="{{check-delete-button item.state}}" {{action 'openDeleteDialog' item.id}}/>
+    </td>
+  </tr>
+</table>
+
+{{yield}}

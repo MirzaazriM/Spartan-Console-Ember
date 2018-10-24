@@ -1,0 +1,29 @@
+.md-subheader {
+
+          color: rgba(paper-color($foreground, "2"), 0.23);
+          color: var(--foreground-2);
+        
+
+          background-color: paper-color($background, "50");
+          background-color: RGB(var(--background-50));
+        
+
+  &.md-primary {
+
+          color: paper-color($primary, "500");
+          color: RGB(var(--primary-500));
+        
+  }
+  &.md-accent {
+
+          color: paper-color($accent, "500");
+          color: RGB(var(--accent-500));
+        
+  }
+  &.md-warn {
+
+          color: paper-color($warn, "500");
+          color: RGB(var(--warn-500));
+        
+  }
+}

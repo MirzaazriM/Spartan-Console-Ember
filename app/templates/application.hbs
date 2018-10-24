@@ -1,0 +1,42 @@
+
+  <!-- upload image element -->
+  <input id="inputFileElement" onchange={{action 'loadFile'}} type="file">
+
+  <!-- upload muscle image element -->
+  <input id="inputMuscleFileElement" onchange={{action 'loadMuscleImageFile'}} type="file">
+
+  <!-- upload media element -->
+  <input id="inputMediaFileElement" onchange={{action 'loadMediaImageFile'}} type="file" multiple accept=".gif,.mp4, .mkv">
+
+  <!-- Log in box -->
+  {{login-box-component}}
+
+<div  id="outletWrapper" {{action 'closeDropdowns'}}>
+
+  <!-- Progress bar -->
+  {{progress-bar-component}}
+
+  <!-- Set header component to be shown on every page of the application -->
+  <div {{action 'closeDropdowns'}}>
+    {{header-component clickedItem=currentPage}}
+  </div>
+
+
+  <!-- Set menu component to be shown on every page of the application -->
+  <div {{action 'closeDropdowns'}}>
+    {{menu-component clickedItem=currentPage}}
+  </div>
+
+
+  {{outlet}}
+
+
+  <!-- Toast -->
+  {{toast-component toastText=textForToast}}
+
+  <div id="dialogOverlay"></div>
+
+  <!-- Menu overlay -->
+  <div id="menuOverlay" {{action 'closeOverlayAndMenu'}}></div>
+
+</div>

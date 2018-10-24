@@ -1,0 +1,301 @@
+md-slider {
+
+  .md-track {
+
+          background-color: paper-color($foreground, "3");
+          background-color: var(--foreground-3);
+        
+  }
+  .md-track-ticks {
+
+          color: paper-contrast-color($background, "50");
+          color: RGB(var(--background-50-contrast));
+        
+  }
+  .md-focus-ring {
+
+          background-color: rgba(paper-color($accent, "A200"), 0.2);
+          background-color: RGBA(var(--accent-A200), 0.2);
+        
+  }
+  .md-disabled-thumb {
+
+          border-color: paper-color($background, "50");
+          border-color: RGB(var(--background-50));
+        
+
+          background-color: paper-color($background, "50");
+          background-color: RGB(var(--background-50));
+        
+  }
+
+  &.md-min {
+    .md-thumb:after {
+
+          background-color: paper-color($background, "50");
+          background-color: RGB(var(--background-50));
+        
+
+          border-color: paper-color($foreground, "3");
+          border-color: var(--foreground-3);
+        
+    }
+
+    .md-focus-ring {
+
+          background-color: rgba(paper-color($foreground, "3"), 0.38);
+          background-color: var(--foreground-3);
+        
+    }
+
+    &[md-discrete] {
+      .md-thumb {
+        &:after {
+
+          background-color: paper-contrast-color($background, "50");
+          background-color: RGB(var(--background-50-contrast));
+        
+          border-color: transparent;
+        }
+      }
+
+      .md-sign {
+
+          background-color: paper-color($background, "400");
+          background-color: RGB(var(--background-400));
+        
+        &:after {
+
+          border-top-color: paper-color($background, "400");
+          border-top-color: RGB(var(--background-400));
+        
+        }
+      }
+
+      &[md-vertical] {
+        .md-sign:after {
+          border-top-color: transparent;
+
+          border-left-color: paper-color($background, "400");
+          border-left-color: RGB(var(--background-400));
+        
+        }
+      }
+    }
+  }
+
+  .md-track.md-track-fill {
+
+          background-color: paper-color($accent, "500");
+          background-color: RGB(var(--accent-500));
+        
+  }
+  .md-thumb:after {
+
+          border-color: paper-color($accent, "500");
+          border-color: RGB(var(--accent-500));
+        
+
+          background-color: paper-color($accent, "500");
+          background-color: RGB(var(--accent-500));
+        
+  }
+  .md-sign {
+
+          background-color: paper-color($accent, "500");
+          background-color: RGB(var(--accent-500));
+        
+    &:after {
+
+          border-top-color: paper-color($accent, "500");
+          border-top-color: RGB(var(--accent-500));
+        
+    }
+  }
+
+  &[md-vertical] {
+    .md-sign:after {
+      border-top-color: transparent;
+
+          border-left-color: paper-color($accent, "500");
+          border-left-color: RGB(var(--accent-500));
+        
+    }
+  }
+
+  .md-thumb-text {
+
+          color: paper-contrast-color($accent, "500");
+          color: RGB(var(--accent-500-contrast));
+        
+  }
+
+  &.md-warn {
+    .md-focus-ring {
+
+          background-color: rgba(paper-color($warn, "200"), 0.38);
+          background-color: RGBA(var(--warn-200), 0.38);
+        
+    }
+    .md-track.md-track-fill {
+
+          background-color: paper-color($warn, "500");
+          background-color: RGB(var(--warn-500));
+        
+    }
+    .md-thumb:after {
+
+          border-color: paper-color($warn, "500");
+          border-color: RGB(var(--warn-500));
+        
+
+          background-color: paper-color($warn, "500");
+          background-color: RGB(var(--warn-500));
+        
+    }
+    .md-sign {
+
+          background-color: paper-color($warn, "500");
+          background-color: RGB(var(--warn-500));
+        
+
+      &:after {
+
+          border-top-color: paper-color($warn, "500");
+          border-top-color: RGB(var(--warn-500));
+        
+      }
+    }
+
+    &[md-vertical] {
+      .md-sign:after {
+        border-top-color: transparent;
+
+          border-left-color: paper-color($warn, "500");
+          border-left-color: RGB(var(--warn-500));
+        
+      }
+    }
+
+    .md-thumb-text {
+
+          color: paper-contrast-color($warn, "500");
+          color: RGB(var(--warn-500-contrast));
+        
+    }
+  }
+
+  &.md-primary {
+    .md-focus-ring {
+
+          background-color: rgba(paper-color($primary, "200"), 0.38);
+          background-color: RGBA(var(--primary-200), 0.38);
+        
+    }
+    .md-track.md-track-fill {
+
+          background-color: paper-color($primary, "500");
+          background-color: RGB(var(--primary-500));
+        
+    }
+    .md-thumb:after {
+
+          border-color: paper-color($primary, "500");
+          border-color: RGB(var(--primary-500));
+        
+
+          background-color: paper-color($primary, "500");
+          background-color: RGB(var(--primary-500));
+        
+    }
+    .md-sign {
+
+          background-color: paper-color($primary, "500");
+          background-color: RGB(var(--primary-500));
+        
+
+      &:after {
+
+          border-top-color: paper-color($primary, "500");
+          border-top-color: RGB(var(--primary-500));
+        
+      }
+    }
+
+    &[md-vertical] {
+      .md-sign:after {
+        border-top-color: transparent;
+
+          border-left-color: paper-color($primary, "500");
+          border-left-color: RGB(var(--primary-500));
+        
+      }
+    }
+
+    .md-thumb-text {
+
+          color: paper-contrast-color($primary, "500");
+          color: RGB(var(--primary-500-contrast));
+        
+    }
+  }
+
+  &[disabled] {
+    .md-thumb:after {
+      border-color: transparent;
+    }
+    &:not(.md-min), &[md-discrete] {
+      .md-thumb:after {
+
+          background-color: paper-color($foreground, "3");
+          background-color: var(--foreground-3);
+        
+        border-color: transparent;
+      }
+    }
+  }
+
+  &[disabled][readonly] {
+    .md-sign {
+
+          background-color: paper-color($background, "400");
+          background-color: RGB(var(--background-400));
+        
+      &:after {
+
+          border-top-color: paper-color($background, "400");
+          border-top-color: RGB(var(--background-400));
+        
+      }
+    }
+
+    &[md-vertical] {
+      .md-sign:after {
+        border-top-color: transparent;
+
+          border-left-color: paper-color($background, "400");
+          border-left-color: RGB(var(--background-400));
+        
+      }
+    }
+
+    .md-disabled-thumb {
+      border-color: transparent;
+      background-color: transparent;
+    }
+  }
+}
+
+md-slider-container {
+  &[disabled] {
+    & > *:first-child,
+    & > *:last-child {
+      &:not(md-slider){
+
+          color: paper-color($foreground, "3");
+          color: var(--foreground-3);
+        
+      }
+    }
+  }
+}

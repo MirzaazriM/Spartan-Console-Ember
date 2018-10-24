@@ -1,0 +1,8 @@
+
+{{#each list as |workout|}}
+  <div id="{{workout.id}}" class="workoutListItem" {{action 'select' workout.id}}>
+    <p>{{workout.name}}</p>
+  </div>
+{{/each}}
+
+{{yield}}
